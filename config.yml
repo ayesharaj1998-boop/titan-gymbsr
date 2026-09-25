@@ -1,0 +1,16 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "gallery_note"
+    label: "Gallery Info"
+    files:
+      - file: "gallery-info.yml"
+        label: "About this panel"
+        name: "gallery_info"
+        fields:
+          - { label: "Instructions", name: "note", widget: "text", default: "Photos/videos yahan se manage mat karo — sirf upar 'Media' button dabao, Media Library khulegi, aur wahan se photo/video upload ya replace kar do. Exact filenames use karo: titan-front.jpg, cardio-zone.jpg, weights-area.jpg, gym-tour.mp4" }
